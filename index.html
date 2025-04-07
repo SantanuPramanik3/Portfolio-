@@ -1,720 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initialscale=1.0">
-    <title>Portfolio - Modern Glassmorphism Navbar</title>
-    <!-- Bootstrap CSS -->
-    <link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstra
-p.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?
-family=Poppins:wght@300;400;500;600;700&display=swap"
-rel="stylesheet">
-    <!-- Particles.js -->
-    <script
-src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
-</script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initialscale=1.0" />
+  <title>Santanu | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstra
+p.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrapicons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Particles.js -->
+  <script
+src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
+></script>
 </head>
 <body>
-    <!-- Particles.js Container -->
-    <div id="particles-js"></div>
-    
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <!-- Logo with Glow Effect -->
-            <a class="navbar-brand glow" href="#home">
-                <span class="logo-text">Hello 🤗</span>
-            </a>
-            
-            <!-- Hamburger Menu -->
-            <button class="navbar-toggler" type="button" data-bstoggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" arialabel="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <!-- Navigation Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-glow" href="#">Hello 🤗</a>
+      <button class="navbar-toggler" type="button" data-bstoggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+          <li class="nav-item"><a class="nav-link active"
+href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link"
+href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link"
+href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link"
+href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link"
+href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link"
+href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1"
+id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bsdismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link"
+href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link"
+href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link"
+href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link"
+href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link"
+href="#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link"
+href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 <!-- Home Section -->
-<section id="home" class="home-section">
-    <div class="container">
-        <div class="home-content">
-            <!-- Name with Subtle Glow -->
-            <h1 class="name-title">Santanu Pramanik</h1>
-            
-            <!-- Short Description -->
-            <p class="description">Creative YouTube Thumbnail
-Designer for Engaging Content</p>
-            
-            <!-- Call-to-Action Buttons -->
-            <div class="cta-buttons">
-                <a href="#contact" class="btn hire-me">Hire Me</a>
-                <a href="#projects" class="btn view-portfolio">View
+<section id="home" class="home-section d-flex align-items-center
+justify-content-center text-center">
+  <div class="glass-card">
+    <h1 class="hero-title">Santanu Pramanik</h1>
+    <p class="hero-desc">Creative YouTube Thumbnail Designer for
+Engaging Content</p>
+    <div class="cta-buttons mt-4">
+      <a href="#contact" class="btn-glow">Hire Me</a>
+      <a href="#projects" class="btn-glow btn-secondary">View
 Work</a>
-            </div>
-            
-            <!-- Social Media Icons -->
-            <div class="social-icons">
-                <a href="https://wa.me/+916294183738" target="_blank"
-rel="noopener" class="social-icon" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://github.com/yourprofile" target="_blank"
-rel="noopener" class="social-icon" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                
-                
-              <!--  <a href="https://twitter.com/yourhandle"
-target="_blank" rel="noopener" class="social-icon" arialabel="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://linkedin.com/in/yourprofile"
-target="_blank" rel="noopener" class="social-icon" arialabel="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://dribbble.com/yourprofile" target="_blank"
-rel="noopener" class="social-icon" aria-label="Dribbble">
-                    <i class="fab fa-dribbble"></i>
-                </a> -->
-                
-                
-            </div>
-        </div>
     </div>
-    
-    <!-- Simple Floating Elements -->
-    <div class="floating-element element-1"></div>
-    <div class="floating-element element-2"></div>
+    <div class="social-icons mt-4">
+      <a href="https://wa.me/+916294183738" target="_blank"
+class="social-icon" aria-label="WhatsApp"><i class="bi biwhatsapp"></i></a>
+<a href="https://github.com/yourprofile" target="_blank"
+class="social-icon" aria-label="GitHub"><i class="bi bi-github"></i>
+</a>
+    </div>
+  </div>
 </section>
-<!-- About Me Section -->
-<section id="about" class="about-section">
-    <div class="container">
-        <div class="section-header">
-            <h2>About <span>Me</span></h2>
-            <div class="divider"></div>
-        </div>
-        
-        <div class="about-content">
-            <!-- Profile Image Card -->
-            <div class="profile-card">
-                <div class="glass-circle">
-                    <div class="profile-image">
-                        <img
-src="https://dl.dropbox.com/scl/fi/mxtnwdhh3fzg6jetta7on/1730819
-655243-removebg-preview.png?
-rlkey=rqes6z45lcnqpa6ppshb764g4&st=7km4jg8g&dl=0.jpg"
-alt="Santanu Pramanik" loading="lazy">
-                    </div>
-                </div>
-            </div>
-            
-            <!-- About Text -->
-            <div class="about-text glass-card">
-                <h3>Creative Designer & Developer</h3>
-                <p>I'm Santanu Pramanik, a passionate graphic designer
-and YouTube thumbnail specialist with a knack for creating eyecatching visuals. I combine creativity and strategy to design
+<!-- About Section -->
+<section id="about" class="about-section d-flex flex-column alignitems-center justify-content-center text-center">
+  <div class="about-content">
+    <div class="profile-glass animate-glow">
+      <img
+src="https://dl.dropbox.com/scl/fi/ylhfodrddmvo6sb43jg12/17308196
+55243.jpg?
+rlkey=7czap0v8hh1b85ndxdax6z1ql&st=oehoh2sy&dl=0.jpg"
+alt="Santanu Pramanik" class="profile-img" />
+    </div>
+    <h2 class="about-title">About Me</h2>
+    <p class="about-desc">
+      I'm Santanu Pramanik, a passionate graphic designer and
+YouTube thumbnail specialist with a knack for creating eyecatching visuals. I combine creativity and strategy to design
 thumbnails that boost clicks and engagement. Whether branding or
-digital content, I deliver designs that stand out. Lets bring your
-ideas to life! 🎨✨</p>
-                
-                <!-- Info Cards -->
-                <div class="info-grid">
-                    <div class="info-card">
-                        <i class="fas fa-user"></i>
-                        <div>
-                            <span>Name</span>
-                            <p>Santanu Pramanik</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <span>Email</span>
-                            <p>hello@santanu.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <span>Location</span>
-                            <p>Kolkata, India</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <i class="fas fa-badge-check"></i>
-                        <div>
-                            <span>Freelance</span>
-                            <p>Available</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+digital content, I deliver designs that stand out. Let’s bring your
+ideas to life! 🎨✨
+    </p>
+    <div class="info-cards mt-4">
+      <div class="info-card">Name: <span>Santanu Pramanik</span>
+</div>
+      <div class="info-card">Email:
+<span>gmax49781@gmail.com</span></div>
+      <div class="info-card">Location: <span>India</span></div>
+      <div class="info-card">Freelance: <span>Available</span></div>
     </div>
-    
-    <!-- Background Animation Elements -->
-    <div class="bg-dot bg-dot-1"></div>
-    <div class="bg-dot bg-dot-2"></div>
-    <div class="bg-dot bg-dot-3"></div>
-    <div class="bg-dot bg-dot-4"></div>
+  </div>
 </section>
-<!-- Skills Section -->
 <section id="skills" class="skills-section">
-    <div class="container">
-        <div class="section-header">
-            <h2>My <span>Skills</span></h2>
-            <div class="divider"></div>
-            <p class="section-subtitle">Technologies I work with</p>
+  <div class="container">
+    <h2 class="section-title">My Skills</h2>
+    <!-- Skill Category -->
+    <div class="skill-category">
+      <h3>Web Development</h3>
+      <div class="skill-box">
+        <span>VS Code</span>
+        <div class="progress">
+          <div class="progress-bar" style="--percent: 95%; --color:
+#00ffff;">95%</div>
         </div>
-        <div class="skills-categories">
-            <!-- Web Development Category -->
-            <div class="skill-category glass-card">
-                <div class="category-header">
-                    <i class="fas fa-code"></i>
-                    <h3>Web Development</h3>
-                </div>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>VS Code</span>
-                            <span class="skill-percent">95%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="95" style="--progress-color: #e34f26"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>WebStorm</span>
-                            <span class="skill-percent">90%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="90" style="--progress-color: #264de4"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Adobe XD</span>
-                            <span class="skill-percent">85%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="85" style="--progress-color: #f0db4f"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Docker</span>
-                            <span class="skill-percent=">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="80" style="--progress-color: #61dafb"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Graphic Design Category -->
-            <div class="skill-category glass-card">
-                <div class="category-header">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Graphic Design</h3>
-                </div>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Adobe Photoshop</span>
-                            <span class="skill-percent">90%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="90" style="--progress-color: #31a8ff"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Adobe Illustrator</span>
-                            <span class="skill-percent">85%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="85" style="--progress-color: #ff9a00"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Figma</span>
-                            <span class="skill-percent">88%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="88" style="--progress-color: #a259ff"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Data Analysis Category -->
-            <div class="skill-category glass-card">
-                <div class="category-header">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Data Analysis</h3>
-                </div>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Python</span>
-                            <span class="skill-percent">75%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="75" style="--progress-color: #3776ab"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Excel</span>
-                            <span class="skill-percent">80%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="80" style="--progress-color: #00758f"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Tableau</span>
-                            <span class="skill-percent">70%</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="progress-bar" data-percent="70" style="--progress-color: #9761e6"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="skill-box">
+        <span>WebStorm</span>
+        <div class="progress">
+          <div class="progress-bar" style="--percent: 90%; --color:
+#ff6ec7;">90%</div>
         </div>
+      </div>
+      <div class="skill-box">
+        <span>Adobe XD</span>
+        <div class="progress">
+          <div class="progress-bar" style="--percent: 85%; --color:
+#ffc107;">85%</div>
+        </div>
+      </div>
     </div>
-    <!-- Background Elements -->
-    <div class="skill-bg-element element-1"></div>
-    <div class="skill-bg-element element-2"></div>
-    <div class="skill-bg-element element-3"></div>
+    <div class="skill-category">
+      <h3>Graphic Design</h3>
+      <div class="skill-box">
+        <span>Adobe Photoshop</span>
+        <div class="progress">
+          <div class="progress-bar" style="--percent: 88%; --color:
+#a677ff;">88%</div>
+        </div>
+      </div>
+      <div class="skill-box">
+        <span>Adobe Illustrator</span>
+        <div class="progress">
+          <div class="progress-bar" style="--percent: 80%; --color:
+#32d1ff;">80%</div>
+        </div>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Data Analysis</h3>
+      <div class="skill-box">
+        <span>Python</span>
+        <div class="progress">
+          <div class="progress-bar" style="--percent: 78%; --color:
+#ffaa00;">78%</div>
+        </div>
+      </div>
+      <div class="skill-box">
+        <span>Excel</span>
+        <div class="progress">
+          <div class="progress-bar" style="--percent: 85%; --color:
+#00ff99;">85%</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Projects Section -->
 <section id="projects" class="projects-section">
-    <div class="container">
-        <div class="section-header">
-            <h2>My <span>Projects</span></h2>
-            <div class="divider"></div>
-            <p class="section-subtitle">Preview of my best work</p>
-        </div>
-        <!-- Video Showcase -->
-        <div class="video-showcase glass-card">
-            <div class="video-container">
-                <div class="video-wrapper">
-                    <video class="project-video" preload="metadata"
-playsinline loop muted>
-                        <source
-src="https://dl.dropbox.com/scl/fi/6kz0zl8ibf2518121y0td/lv_0_2025
-0225111332.mp4?
-rlkey=xkx2d66apdl6kfwm5o5nx9tib&st=dlq3b16l&dl=0.mp4"
-type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="video-overlay">
-                        <!-- <button class="play-btn">
-                            <i class="fas fa-play"></i> -->
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="video-info">
-                <h3>My Creative Process</h3>
-                <p>Yep, I designed ALL these thumbnails - no magic, just
-strategic pixels ✨.</p>
-            </div>
-        </div>
-        <!-- Filter Buttons -->
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" datafilter="survival">Survival</button>
-            <button class="filter-btn" datafilter="documentary">Documentary</button>
-            <button class="filter-btn" data-filter="cheap-vsexpensive">Cheap vs Expensive</button>
-            <button class="filter-btn" data-filter="game-challenge">Game
-Challenge</button>
-            <button class="filter-btn" datafilter="challenges">Challenges</button>
-        </div>
-        <!-- Project Grid -->
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card glass-card" datacategory="survival">
-                <div class="project-thumbnails">
-                    <img
+  <h2 class="section-title">My Projects</h2>
+  <!-- Survival -->
+  <div class="project-card glass-box">
+    <h3>Survival</h3>
+    <div class="thumb-grid">
+      <img
 src="https://dl.dropbox.com/scl/fi/l5nd7ryo7b6l5ubfd7fu2/CphKmro
 VQiat1J5n83TZsw.jpeg?
 rlkey=1fwk4hopkc7voqked5am3j89z&st=o915s9fg&dl=0.jpg"
-alt="Survival Project 1" loading="lazy">
-                    <img
+alt="Survival 1" loading="lazy">
+      <img
 src="https://dl.dropbox.com/scl/fi/hqjckzoxe1we1zmh1opyl/qeM0kF
 y_QmuzS4N8GRnPKA.jpeg?
 rlkey=n0h9xb5lrxtbxpkx7meppg3vs&st=qyxgx5fz&dl=0.jpg"
-alt="Survival Project 2" loading="lazy">
-                    <img
+alt="Survival 2" loading="lazy">
+      <img
 src="https://dl.dropbox.com/scl/fi/j5hw1ltzfxu9v7m9wvxvh/QoXk3fJ
 vSraHVUWMl7V6tA.jpeg?
 rlkey=h4wwih59rayvotnq2m6sj05rp&st=te4m8ewj&dl=0.jpg"
-alt="Survival Project 3" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/ktanz00umhxas6m1nav31/aphoto-of-a-young-snorkeler-with-ashoc_1ednmEfkQU2JA5clkiMr9A_m8uKjReDTgedGubcZ7Y0yA.jpeg?
-rlkey=fni5vmskvpdvdey19ubviw1p1&st=daj02ywc&dl=0.jpg"
-alt="Survival Project 4" loading="lazy">
-                </div>
-                <div class="project-info">
-                    <h3>Survival</h3>
-                    <p>Almost Died Trying: My 24-Hour Survival
-Experiment</p>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card glass-card" datacategory="documentary">
-                <div class="project-thumbnails">
-                    <img
+alt="Survival 3" loading="lazy">
+      <img
+src="https://dl.dropbox.com/scl/fi/jpwact3wqmn2xy8cl6wsm/a-
+tense-survival-scene-featuring-arugge_1wgm2NX4RUKFlXa0_LMdUQ_rZlT3T2Sk6d7fWt6SNcbg.jpeg?
+rlkey=um3efbf0lukf1fl1v8h5d3xs1&st=6f6806cr&dl=0.jpg"
+alt="Survival 4" loading="lazy">
+    </div>
+  </div>
+  <!-- Documentary -->
+  <div class="project-card glass-box">
+    <h3>Documentary</h3>
+    <div class="thumb-grid">
+      <img
 src="https://dl.dropbox.com/scl/fi/ypxjuvoes759ha71zgrzm/a-splitimage-with-a-dark-grayscale-pict_-
 GMWs7rlS_SCxbFWJP7vlw_vRO_ALb9RAOPAZyLlFCpUw.jpeg?
 rlkey=lzo9vjms4f8zisdyu8szafjh6&st=unhsxa7b&dl=0.jpg"
-alt="Documentary Project 1" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/h0yeqhky3vapep5pbvfsi/Qn1_H3r
-TTWGxewvI0aeaEQ.jpeg?
-rlkey=5u2lqdcjbnp75g5ixnx2nhusz&st=r39wcy47&dl=0.jpg"
-alt="Documentary Project 2" loading="lazy">
-                    <img
+alt="Documentary 1" loading="lazy">
+      <img
+src="https://dl.dropbox.com/scl/fi/sb8j47dyby0zdnda9my9x/acinematic-scene-split-between-theocea_FMuQnI_RRxydDX3eJuBY0A_Z3NRkZAASUCVjwHi4A5-
+_g.jpeg?rlkey=qntxwsl3nant2w9j00tyhlgfd&st=h3m0v1up&dl=0.jpg"
+alt="Documentary 2" loading="lazy">
+      <img
 src="https://dl.dropbox.com/scl/fi/y2ep8ysbku4rlreswu8ci/RKavVA7
 xQ3K2aB6F2QvQFQ.jpeg?
 rlkey=u31zidpykhmu6vofa0tsthpaw&st=uyoix87m&dl=0.jpg"
-alt="Documentary Project 3" loading="lazy">
-                    <img
+alt="Documentary 3" loading="lazy">
+      <img
 src="https://dl.dropbox.com/scl/fi/m31jz6y75zx3vmn2846l7/YLfdnv
 EERhO5BecG-Q7j7w.jpeg?
 rlkey=vrk66ycgvw2vclpxlaj35bu63&st=1cg3cvzu&dl=0.jpg"
-alt="Documentary Project 4" loading="lazy">
-                </div>
-                <div class="project-info">
-                    <h3>Documentary</h3>
-                    <p>Dead on Schedule: Can You Cheat Your Biological
-Clock?</p>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="project-card glass-card" data-category="cheap-vsexpensive">
-                <div class="project-thumbnails">
-                    <img
+alt="Documentary 4" loading="lazy">
+    </div>
+  </div>
+  <!-- Cheap vs Expensive -->
+  <div class="project-card glass-box">
+    <h3>Cheap vs Expensive</h3>
+    <div class="thumb-grid">
+      <img
+src="https://dl.dropbox.com/scl/fi/gsnlvswrd9xdycxr94zdr/a-splitscene-image-of-two-young-men-
+com_YmWG8PZRTcW4B6gbcwPXdg_2YRqdtUDQO2E1cIrAvy1xg.jpe
+g?rlkey=3yi447xz5u7ivmmmsokov9oma&st=jfc7xarw&dl=0.jpg"
+alt="Cheap 1" loading="lazy">
+      <img src="https://dl.dropbox.com/scl/fi/cgi18yop4ybdi2lzt43o4/aconfused-young-man-wearing-a-blackshi_0XjYvP2kRoqwS9763YEYvg_-O7jQnq_TuaBEfzi83Y8mw.jpeg?
+rlkey=99o39syn5sllq23fs64cg09to&st=kt3ckwfu&dl=0.jpg"
+alt="Cheap 2" loading="lazy">
+      <img
+src="https://dl.dropbox.com/scl/fi/3s389qahxgm4b95z08sav/acinematic-shot-of-a-man-comparing-two-_KkH_UetoS6aXo-
+_a5piJfg_iH18owp7THK88bj89LoLRg.jpeg?
+rlkey=xpkv0v7cz2cnn0lrv2eqz1at5&st=eil2inn4&dl=0.jpg"
+alt="Cheap 3" loading="lazy">
+      <img
 src="https://dl.dropbox.com/scl/fi/nidtigyeoqrizpbmzc2k8/HGu8j6m
 BQP-Ii6zghb-PhQ.jpeg?
-rlkey=ogd35lmqss81xoewvses0k5wb&st=a2epal17&dl=0.jpg"
-alt="Cheap vs Expensive 1" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/ig03xaftlqa068lkp4njg/a-photo-ofa-man-with-long-hair-and-abe_kFjoRx2wRLKxj6hXkvslmA_seZ9JqzQSGqz6ePgTcQwPQ.jpeg?
-rlkey=68feabgl5h12pk9l1vnpvz7dv&st=4mzqv46w&dl=0.jpg"
-alt="Cheap vs Expensive 2" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/wt8rompre4bz6tqm9kvd3/aphoto-of-a-man-standing-in-the-center-_YQ3Pusv6SmyoAxbV6-
-TSlQ_EYt5nGrCRxCetfo3pNIv1g.jpeg?
-rlkey=3aa7whex3wz8sys3dk3i9b7sv&st=7zitphll&dl=0.jpg"
-alt="Cheap vs Expensive 3" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/j0zzi2kire0fy45nbboho/1CIwLbvU
-ROiuk1slIjE9tw.jpeg?
-rlkey=y7dt4x7s98vy60lo4ih3gmw9q&st=f01tgu7p&dl=0.jpg"
-alt="Cheap vs Expensive 4" loading="lazy">
-                </div>
-                <div class="project-info">
-                    <h3>Cheap VS Expensive</h3>
-                    <p>The Price Tag Blind Test: Guess Which Costs 10X
-More</p>
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="project-card glass-card" data-category="gamechallenge">
-                <div class="project-thumbnails">
-                    <img
-src="https://dl.dropbox.com/scl/fi/wx0zitylpw3lw8tfpfe6a/a-photoof-a-vibrant-thumbnail-for-a-fun_lkCAAy8SWCij7o3gIMglw_nnsWjGDcQZ6-QTbSBbq_sw.jpeg?
-rlkey=sc75h8tdzb4k101m0sb3tkyof&st=dgrpkarc&dl=0.jpg"
-alt="Game Challenge 1" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/khvwef2jrd24qtrd8fwmd/athumbnail-for-a-game-show-titledhands_7bWcBguSRWGZgubdgzeZuw_4Cz8b_ReQlaLgPfjGhi8Eg.jpeg
-?rlkey=znz6kv6d7l58alayqnwcxkes5&st=rj2k5mom&dl=0.jpg"
-alt="Game Challenge 2" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/m6igba9bv6av0ewzubb0s/aphoto-of-a-vibrant-and-energeticposte_JYFEYlTvQ5i_aAsAj2mkhA_725mx6L5TJSWANgH82-
-JHQ.jpeg?
-rlkey=8lsuybhp5jw0g5sbufkakjwcd&st=ibm4rgq4&dl=0.jpg"
-alt="Game Challenge 3" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/1a997njx5fzkc7szaqbnh/a-photoof-a-vibrant-poolside-scenewith_mm4BBWoDSnedWdsVbTjFfA_3DIkLhh7R_KBHIjwNY2b0A.jp
-eg?rlkey=zt6u0jpea4pla2at5pkjzow4c&st=n6os5xce&dl=0.jpg"
-alt="Game Challenge 4" loading="lazy">
-                </div>
-                <div class="project-info">
-                    <h3>Gaming Challenges</h3>
-                    <p>Who Will DOMINATE? The Ultimate Showdown
-Begins</p>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="project-card glass-card" datacategory="challenges">
-                <div class="project-thumbnails">
-                    <img
-src="https://dl.dropbox.com/scl/fi/vn6m89dnpzydh5g3q0sse/Acandid-street-photograph-depicting-thick-fog-obscuring-urbanscenes-showcasing-spontaneous-moments.-Two...ne-in-a-makeshiftblue-tarp-tent-with-a-Money-logo-wearing-an-orange-hoodie-andholding-a-stick-the-other-in-a-luxurious.jpg?
-rlkey=vkmc4fjyalf4ckujo4tn6h2f5&st=u5ugbj5f&dl=0.jpg"
-alt="Challenge Project 1" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/jy5ju09b9izy5w0zm784d/453d099
-2-c24b-48b0-ae2a-370bcb6a9ae3.jpg?
-rlkey=xaz6fgnv9wrf0mu34m7q148ki&st=mmt4ifh9&dl=0.jpg"
-alt="Challenge Project 2" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/fp9zamltwup4q1qi68yrs/downloa
-d-2.jpeg?
-rlkey=1mhfef0zk2pwy197np1llonvg&st=6a225xkz&dl=0.jpg"
-alt="Challenge Project 3" loading="lazy">
-                    <img
-src="https://dl.dropbox.com/scl/fi/sn6c6y9v3vjdkvmdb6ux1/downlo
-ad-1.jpeg?
-rlkey=eptgwxazuuu8u8eqqd5l79asl&st=vg8reqqq&dl=0.jpg"
-alt="Challenge Project 4" loading="lazy">
-                </div>
-                <div class="project-info">
-                    <h3>Challenges</h3>
-                    <p>Pushing Human Limits: The Challenge That Broke
-Me</p>
-                </div>
-            </div>
-            
-    <!-- Background Elements -->
-    <div class="projects-bg-element element-1"></div>
-    <div class="projects-bg-element element-2"></div>
-    <div class="projects-bg-element element-3"></div>
+rlkey=ogd35lmqss81xoewvses0k5wb&st=uwri0o2z&dl=0.jpg"
+alt="Cheap 4" loading="lazy">
+    </div>
+  </div>
+  <!-- Car Restoration -->
+  <div class="project-card glass-box">
+    <h3>Car Restoration</h3>
+    <div class="thumb-grid">
+      <img
+src="https://dl.dropbox.com/scl/fi/vg282alu213gh8syv9hzq/a-photoof-a-heavily-rusted-abandonedol_f6y_9hLaTpynT5Atb_EbjA_1ZuMwqAfREahIxlNpWRi2A.jpeg?
+rlkey=15gtgonmspsfapqima3hilx2s&st=1q70y4sm&dl=0.jpg"
+alt="Car 1" loading="lazy">
+      <img
+src="https://dl.dropbox.com/scl/fi/ymj5s2smj87iojceaqgzd/acinematic-shot-of-a-50-year-old-green-
+_egU0Rz2XSpGnu5C7jiRWNw_NDOlJzoISU6Hw88SRy2JZQ.jpeg?
+rlkey=86449tvyhyw5eede0wmvikkch&st=qydbrpjw&dl=0.jpg"
+alt="Car 2" loading="lazy">
+      <img src="https://dl.dropbox.com/scl/fi/drjsbg09jbs7tg1nqvzi0/aphoto-of-a-young-man-in-a-green-shirt-_tHQt5yFHSfPFzf7U6ggTw_c786U8kGTLWmMuHPUDl2Vw.jpeg?
+rlkey=zwdf7w0le992o1z36h1z3fve0&st=zshhs3s7&dl=0.jpg"
+alt="Car 3" loading="lazy">
+      <img
+src="https://dl.dropbox.com/scl/fi/3l48ylcn1bdot4gljrj1q/an-imageof-a-heavily-rusted-and-abandon_XGEJjfO0TXmd9kaVpMQWQ_tjBGRF98RT6Mx4zZpihobQ.jpeg?
+rlkey=zy5br7rjge1ol3dbyc6me6q3r&st=x3cc0aty&dl=0.jpg" alt="Car
+4" loading="lazy">
+    </div>
+  </div>
+  <!-- Travel -->
+  <div class="project-card glass-box">
+    <h3>Travel Vlog</h3>
+    <div class="thumb-grid">
+      <img
+src="https://dl.dropbox.com/scl/fi/60klsyawmkvanjc9bpdw4/acinematic-view-of-banaras-varanasi-the_EJuKPQ9dQEyULIttTFo2w_3O8TaHe0QUexMQWVzNL8qg.jpeg?
+rlkey=iujmdrelu6e2nv364utltj6fc&st=ijk0n6h8&dl=0.jpg"
+alt="Travel 1" loading="lazy">
+      <img src="https://dl.dropbox.com/scl/fi/j5z4wqtvls1rziepy43iv/aphoto-of-a-happy-man-wearing-anorange_tm6Cwe9qS12poe64MO8uVQ_v83LTW1ORNW8fNXaS85-
+eA.jpeg?
+rlkey=n07wdgva9dkjwu231ah2gwn3w&st=2stwgglr&dl=0.jpg"
+alt="Travel 2" loading="lazy">
+      <img
+src="https://dl.dropbox.com/scl/fi/625lwdvke49l5uj4tapsg/acheerful-man-is-posing-on-a-railway-tr_Z-ij6VI5QEqC4W5tKqQEg_pkhYkmP7T8G8yYVVfI1SYQ.jpeg?
+rlkey=ilyjos92609ozfn276xs43yxm&st=lp0by2q4&dl=0.jpg"
+alt="Travel 3" loading="lazy">
+      <img
+src="https://dl.dropbox.com/scl/fi/r4qpwt5d1bk3b9lcct436/a-photoof-a-happy-couple-taking-aselfi_zScMjEp7RwqK1vLJQfikDg_lUFabtMDQ2W_-wRLvh-Z4A.jpeg?
+rlkey=u7w42srfjyazfvdrm1vbbj7ey&st=qjof98vd&dl=0.jpg"
+alt="Travel 4" loading="lazy">
+    </div>
+  </div>
 </section>
 <!-- Pricing Section -->
 <section id="pricing" class="pricing-section">
-    <!-- Background Particles -->
-    <div class="bg-particle particle-1"></div>
-    <div class="bg-particle particle-2"></div>
-    <div class="bg-particle particle-3"></div>
-    <div class="container">
-        <div class="section-header">
-            <h2>Simple <span>Pricing</span></h2>
-            <div class="divider"></div>
-            <p class="section-subtitle">Choose the perfect plan for your
-needs</p>
+  <div class="container">
+    <h2 class="section-title">Pricing</h2>
+    <div class="pricing-wrapper">
+      <!-- Basic Plan -->
+      <div class="pricing-card glass">
+        <h3 class="plan-title">Basic</h3>
+        <div class="glass-thumbnail">
+          <img
+src="https://dl.dropbox.com/scl/fi/suudr8xxeciom9besp2kt/aluxurious-and-vibrant-scene-featuring-
+_TRSyuHiUSKKfqlQbPudFgA_bBk2MTMEQrWsFVnRhp2nQA.jpg?
+rlkey=g4qgub5cwarsl2cph8auypsmk&st=7f045lnr&dl=0.jpg"
+alt="Basic Plan Thumbnail" loading="lazy">
         </div>
-        <div class="pricing-cards">
-            <!-- Basic Plan -->
-            <div class="pricing-card glass-card">
-                <div class="pricing-header">
-                    <h3>Basic</h3>
-                    <div class="price">₹350<span>/pieces</span></div>
-                </div>
-                <ul class="features">
-                    <li>Standard Quality</li>
-                    <li>1 Revisions</li>
-                    
-                    <li>Basic Editing</li>
-                    
-                    <li>720p Resolution</li>
-                    <li>Basic Support</li>
-                </ul>
-                <button class="order-btn">Go To WhatsApp ☝️</button>
-            </div>
-            <!-- Standard Plan -->
-            <div class="pricing-card glass-card featured">
-                <div class="pricing-header">
-                    <h3>Standard</h3>
-                    <div class="price">₹450<span>/Pieces</span></div>
-                </div>
-                <ul class="features">
-                    <li>High Quality</li>
-                    
-                    <li>5 Revisions</li>
-                    
-                    <li>Advanced Editing</li>
-                    <li>1080p Resolution</li>
-                    <li>Priority Support</li>
-                </ul>
-                <button class="order-btn">Go To WhatsApp ☝️</button>
-            </div>
-            <!-- Premium Plan -->
-            <div class="pricing-card glass-card">
-                <div class="pricing-header">
-                    <h3>Premium</h3>
-                    <div class="price">₹600<span>/Pieces</span></div>
-                </div>
-                <ul class="features">
-                    <li>Ultra HD Quality</li>
-                    <li>Unlimited Revisions</li>
-                    
-                    <li>Premium Editing</li>
-                    <li>4K Resolution</li>
-                    
-                    <li>24/7 Support</li>
-                </ul>
-                <button class="order-btn">Go To WhatsApp ☝️</button>
-            </div>
+        <p class="price">₹349</p>
+        <ul class="features">
+          <li>1 Revision</li>
+          <li>Basic Quality</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="https://wa.me/+916294183738?
+text=Hi%20Santanu,%20I'm%20interested%20in%20your%20Basic
+%20plan!" target="_blank" class="order-btn">Order Now</a>
+      </div>
+      <!-- Standard Plan -->
+      <div class="pricing-card glass">
+        <h3 class="plan-title">Standard</h3>
+        <div class="glass-thumbnail">
+          <img
+src="https://dl.dropbox.com/scl/fi/5prdldnjpgzeglplb2rjt/aluxurious-and.jpg?
+rlkey=u4vjbj8pihx8k1qzsop0aqopx&st=g26rhbic&dl=0.jpg"
+alt="Standard Plan Thumbnail" loading="lazy">
         </div>
+        <p class="price">₹449</p>
+        <ul class="features">
+          <li>3 Revisions</li>
+          <li>High Quality</li>
+          <li>Chat Support</li>
+        </ul>
+        <a href="https://wa.me/+916294183738?
+text=Hi%20Santanu,%20I'm%20interested%20in%20your%20Stand
+ard%20plan!" target="_blank" class="order-btn">Order Now</a>
+      </div>
+      <!-- Premium Plan -->
+      <div class="pricing-card glass">
+        <h3 class="plan-title">Premium</h3>
+        <div class="glass-thumbnail">
+          <img
+src="https://dl.dropbox.com/scl/fi/dcif25lbmow5xm011c47w/aluxurious-and-vibrant-scene-featuring-
+_TRSyuHiUSKKfqlQbPudFgA_bBk2MTMEQrWsFVnRhp2nQA.jpg?
+rlkey=07ep42dlxa77556zjr1cxop63&st=lyp4bg2l&dl=0.jpg"
+alt="Premium Plan Thumbnail" loading="lazy">
+        </div>
+        <p class="price">₹599</p>
+        <ul class="features">
+          <li>Unlimited Revisions</li>
+          <li>Ultra HD Quality</li>
+          <li>24/7 Support</li>
+        </ul>
+        <a href="https://wa.me/+916294183738?
+text=Hi%20Santanu,%20I'm%20interested%20in%20your%20Premi
+um%20plan!" target="_blank" class="order-btn">Order Now</a>
+      </div>
     </div>
+  </div>
 </section>
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
-    <!-- Background Particles -->
-    <div class="bg-particle particle-1"></div>
-    <div class="bg-particle particle-2"></div>
-    <div class="bg-particle particle-3"></div>
-    <div class="container">
-        <div class="section-header">
-            <h2>Get In <span>Touch</span></h2>
-            <div class="divider"></div>
-            <p class="section-subtitle">Let's discuss your Think</p>
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-wrapper">
+      <!-- Contact Form -->
+      <div class="contact-form glass-card">
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required>
+</textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <!-- Contact Info -->
+      <div class="contact-info glass-card">
+        <div class="info-item">
+          <h4>Email</h4>
+          <p>gmax49781@gmail.com</p>
         </div>
-        <div class="contact-content">
-            <!-- Contact Form -->
-            <div class="contact-form glass-card">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email"
-required>
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5"
-required></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
-                    <button type="submit" class="submit-btn">Send
-Message</button>
-                </form>
-            </div>
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <div class="info-card glass-card">
-                    <div class="info-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>gmax49781@gmail.com</p>
-                </div>
-                <div class="info-card glass-card">
-                    <div class="info-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <h3>Phone</h3>
-                    <p>+91 6294183738</p>
-                </div>
-                <div class="info-card glass-card">
-                    <div class="info-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Location</h3>
-                    <p>Kolkata, India</p>
-                </div>
-            </div>
+        <div class="info-item">
+          <h4>Phone</h4>
+          <p>+91 62941 83738 </p>
         </div>
-    </div>
-</section>
-<footer class="glass-footer">
-  <div class="footer-bg-particle footer-particle-1"></div>
-  <div class="footer-bg-particle footer-particle-2"></div>
-  
-  <div class="container footer-container">
-    <div class="row">
-      
-      <!-- Column 1: Logo & Bio -->
-      <div class="col-lg-4 col-md-6 footer-col">
-        <h2 class="footer-logo">Your Portfolio</h2>
-        <p class="footer-bio">
-          Click Engineer: Designing Websites That Convert +
-Thumbnails That Break CTR Records (Results-focused)
-        </p>
+        <div class="info-item">
+          <h4>Location</h4>
+          <p>Kolkata, India</p>
+        </div>
       </div>
-      
-      <!-- Column 2: Quick Links -->
-      <div class="col-lg-2 col-md-6 footer-col">
-        <h3 class="footer-heading">Sections</h3>
-        <ul class="footer-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      
-      <!-- Column 3: Contact Info -->
-      <div class="col-lg-4 col-md-6 footer-col">
-        <h3 class="footer-heading">Contact</h3>
-        <ul class="footer-contact">
-          <li><i class="fas fa-envelope"></i> gmax49781@gmail.com</li>
-          <li><i class="fas fa-phone"></i> +91 6294183738</li>
-          <li class="social-icons">
-            <a href="https://wa.me/+916294183738"><i class="fab fawhatsapp"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            
-            
-           <!-- <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a> -->
-            
-            
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-    <!-- Copyright & Scroll-to-Top -->
-    <div class="footer-bottom">
-      <p>© 2025 Santanu Pramanik. All Rights Reserved.</p>
-      <button class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-      </button>
     </div>
   </div>
+</section>
+<footer class="glass-footer text-white py-5 position-relative">
+  <div class="container text-center text-md-start">
+    <div class="row justify-content-center g-4">
+     
+      <!-- Column 1: Logo & Bio -->
+      <div class="col-md-4 text-center">
+        <h2 class="footer-logo">Santanu</h2>
+        <p class="footer-bio">Click Engineer: Designing Websites That
+Convert + Thumbnails That Break CTR Records (Results-focused).
+</p>
+      </div>
+      <!-- Column 2: Quick Links -->
+      <div class="col-md-4 text-center">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+         
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Contact Info -->
+      <div class="col-md-4 text-center">
+        <h5 class="footer-heading">Contact Info</h5>
+        <p>Email: gmax49781@gmail.com</p>
+        <p>Phone: +91 62941 83738 </p>
+        <div class="social-icons d-flex justify-content-center gap-3 mt2">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center mt-4">
+      <p class="mb-0">© 2025 Santanu Pramanik. All Rights Reserved.
+</p>
+    </div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-top-btn">↑</button>
+  </div>
 </footer>
-<!-- Bootstrap JS Bundle with Popper -->
-    <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.b
+  <!-- Bootstrap Bundle JS -->
+  <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.b
 undle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="script.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
 </body>
 </html>
