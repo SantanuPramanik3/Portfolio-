@@ -313,8 +313,7 @@ body {
   .progress-bar {
     height: 100%;
     width: var(--percent);
-    background: linear-gradient(90deg, var(--color), rgba(255, 255,
-  255, 0.1));
+    background: linear-gradient(90deg, var(--color), rgba(255, 255, 255, 0.1));
     box-shadow: 0 0 10px var(--color), 0 0 20px var(--color);
     color: #fff;
     font-size: 10px;
@@ -354,54 +353,111 @@ body {
   }
   .projects-section {
     padding: 80px 20px;
-    background: transparent;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
   .section-title {
     font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #00f0ff;
+  }
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .filter-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
     color: #fff;
-    text-align: center;
-    margin-bottom: 60px;
-    font-family: 'Poppins', sans-serif;
-  }
-  .project-card {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 25px;
-    border-radius: 20px;
-    backdrop-filter: blur(1px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease-in-out;
-  }
-  .project-card h3 {
-    font-size: 1.8rem;
-    color: #0ff;
-    margin-bottom: 15px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-  }
-  .thumb-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .thumb-grid img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: 14px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 500;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
-  .thumb-grid img:hover {
+  .filter-btn.active,
+  .filter-btn:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     transform: scale(1.05);
-    box-shadow: 0 0 12px #0ff;
   }
-  @media screen and (max-width: 768px) {
-    .thumb-grid {
-      grid-template-columns: 1fr;
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+  /* Common card style */
+  .project-card {
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+  }
+  /* Poster (1:1) Grid */
+  .project-card.poster {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    padding: 0;
+  }
+  .project-card.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  /* YouTube Thumbnails */
+  .project-card.youtube h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #00ffff;
+  }
+  .thumbnail-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  .thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9 !important;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+  }
+  .thumbnail:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  }
+  /* Responsive Fixes */
+  @media (max-width: 768px) {
+    .filter-buttons {
+      flex-direction: column;
+      align-items: center;
     }
   }
   /* Pricing Section Container */

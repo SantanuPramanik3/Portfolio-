@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         shape: { type: 'circle' },
         opacity: { value: 0.2 },
         size: { value: 3 },
-        line_linked: { enable: true, distance: 150, color: '#ffffff', opacity:
-  0.2, width: 1 },
+        line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.2, width: 1 },
         move: { enable: true, speed: 1, direction: 'none', out_mode: 'out' }
       },
       interactivity: {
@@ -45,8 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll(".circle").forEach(circle => {
         const percent = parseInt(circle.getAttribute("data-percent"));
         const color = circle.getAttribute("data-color");
-        circle.style.background = `conic-gradient(${color} 0%
-  ${percent}%, rgba(255,255,255,0.05) ${percent}%)`;
+        circle.style.background = `conic-gradient(${color} 0% ${percent}%, rgba(255,255,255,0.05) ${percent}%)`;
         circle.style.color = color;
       });
       // Tab switching
@@ -65,30 +63,33 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     });
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
+  document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projectCards = document.querySelectorAll(".project-card");
     filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Toggle active class
-        document.querySelector('.filterbtn.active').classList.remove('active');
-        button.classList.add('active');
-        const category = button.getAttribute('data-category');
+      button.addEventListener("click", () => {
+        const filterValue = button.getAttribute("data-filter");
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        // Filter logic
         projectCards.forEach(card => {
-          if (category === 'all' || card.getAttribute('data-category') ===
-  category) {
-            card.style.display = 'block';
+          const cardCategory = card.classList.contains(filterValue) || filterValue === "all";
+          if (cardCategory) {
+            card.style.display = "block";
           } else {
-            card.style.display = 'none';
+            card.style.display = "none";
           }
         });
       });
     });
+  });
   document.querySelectorAll('.order-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       alert("Thank you! Your order request has been received.");
     });
   });
-    // Wait for the DOM to fully load
+  // Wait for the DOM to fully load
     document.addEventListener("DOMContentLoaded", function () {
       const contactForm = document.getElementById("contactForm");
       if (contactForm) {
@@ -102,11 +103,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
-    document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
       const scrollBtn = document.getElementById("scrollToTopBtn");
       window.addEventListener("scroll", () => {
-        scrollBtn.style.display = (window.scrollY > 200) ? "block" :
-  "none";
+        scrollBtn.style.display = (window.scrollY > 200) ? "block" : "none";
       });
       scrollBtn.addEventListener("click", () => {
         window.scrollTo({
