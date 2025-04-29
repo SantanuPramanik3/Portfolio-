@@ -650,6 +650,123 @@ body {
   .info-item p {
     margin: 0;
   }
+
+  /* Base Styles */
+.review-section {
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-shadow: 0 0 10px cyan;
+}
+/* Wrapper Layout */
+.review-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+/* Review Card Styles */
+.review-card,
+.review-cta {
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 300px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  animation: fadeInUp 1s ease both;
+}
+.review-card:hover,
+.review-cta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+}
+.review-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid cyan;
+  margin: 0 auto 15px auto;  /* Centers the image */
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+.review-card:hover .review-photo {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+/* Review Content */
+.review-name {
+  font-size: 1.2rem;
+  color: cyan;
+  margin-top: 10px;
+}
+.review-stars {
+  font-size: 1.2rem;
+  color: gold;
+  margin: 5px 0;
+}
+.review-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #eee;
+}
+/* CTA Styles */
+.review-cta {
+  margin: 60px auto 0;
+  max-width: 600px;
+}
+.review-cta h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.review-cta p {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+/* Form Elements */
+.review-cta input,
+.review-cta textarea,
+.review-cta select,
+.review-btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.review-btn {
+  background: cyan;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.review-btn:hover {
+  background: #00ffffcc;
+  box-shadow: 0 0 15px cyan;
+}
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   .glass-footer {
     backdrop-filter: blur(1px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);

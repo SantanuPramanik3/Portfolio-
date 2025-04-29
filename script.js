@@ -103,6 +103,40 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the form and review wrapper
+      const form = document.getElementById('reviewForm');
+      const reviewWrapper = document.querySelector('.review-wrapper');
+      // Listen for the form submission event
+      form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        // Get the values from the form inputs
+        const name = form.querySelector('input[type="text"]').value.trim();
+        const comment = form.querySelector('textarea').value.trim();
+        const rating = form.querySelector('select').value;
+        // Validation check: Ensure all fields are filled out
+        if (!name || !comment || !rating) {
+          alert("Please fill out all fields.");
+          return;
+        }
+        // Create a new review card
+        const newCard = document.createElement('div');
+        newCard.className = 'review-card glass-card'; // Apply existing styles
+        // Insert new review content into the card
+        newCard.innerHTML = `
+          <img src="default-profile.png" alt="${name}" class="review-photo">
+          <h4 class="review-name">${name}</h4>
+          <div class="review-stars">${'★'.repeat(rating)}${'☆'.repeat(5 - rating)}</div>
+          <p class="review-text">${comment}</p>
+        `;
+        // Append the new review card to the review wrapper
+        reviewWrapper.appendChild(newCard);
+        // Reset the form fields
+        form.reset();
+      });
+    });
+    
   document.addEventListener("DOMContentLoaded", function () {
       const scrollBtn = document.getElementById("scrollToTopBtn");
       window.addEventListener("scroll", () => {
